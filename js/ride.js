@@ -54,7 +54,7 @@ WildRydes.map = WildRydes.map || {};
     }
 
     function completeRequest(result) {
-	console.alert('Response received from API: ', result);
+	alert('Response received from API: ', result);
         console.log('Response received from API: ', result);
     }
 
