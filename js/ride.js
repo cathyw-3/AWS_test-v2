@@ -54,13 +54,14 @@ WildRydes.map = WildRydes.map || {};
     }
 
     function completeRequest(result) {
+	console.alert('Response received from API: ', result);
         console.log('Response received from API: ', result);
     }
 
     // Register click handler for #request button
     $(function onDocReady() {
         $('#request').click(handleRequestClick);
-	$('#test').click(handleTestClick());
+	$('#test').click(handleTestClick);
         $(WildRydes.map).on('pickupChange', handlePickupChanged);
 
         WildRydes.authToken.then(function updateAuthMessage(token) {
